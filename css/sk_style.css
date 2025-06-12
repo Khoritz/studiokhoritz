@@ -326,7 +326,6 @@ form p {
 form fieldset {
     background-color: hsla(0, 0%, 42%, 0.7);
     border-radius: 20px;
-    flex: 1 1 300px;
     font-size: 0.85em;
     padding: 10px;
     margin: 10px;
@@ -421,7 +420,6 @@ h2 {
 }
 
 div.embedDiv {
-    background-color: hsla(0, 0%, 42%, 0.7);
     border-radius: 20px;
 }
 
@@ -501,9 +499,11 @@ body {
 }
 
 img.formPhoto {
-    width: 100%;
-    height: auto;
     border-radius: 20px;
+    display: block;
+    object-fit: cover;
+    height: 150px;
+    width: 400px;
 }
 
 fieldset {
@@ -540,14 +540,13 @@ div.dataDiv {
 }
 
 img.contact {
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+    border-radius: 20px;
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 300px) {
    img.formPhoto {
       display: none;
-   }
+}
 }
 
 @media (max-width: 482px) {
@@ -559,6 +558,7 @@ img.contact {
 iframe {
     width: 100%;
     height: auto;
+    border-radius: 20px;
 }
 
 /* Validation Styles */
@@ -585,4 +585,48 @@ input#phoneBox:focus:invalid {
 
 div.aside img {
     border-radius: 20px;
+}
+
+@media (min-width: 971px) {
+   img.formPhoto {
+    border-radius: 20px;
+    display: block;
+    object-fit: cover;
+    height: 373px;
+    width: 1000px;      
+   }
+}
+
+
+@media (min-width: 1300px) {
+   img.contactPhoto {
+      display: none;
+   }
+   img.formPhoto {
+    border-radius: 20px;
+    display: block;
+    object-fit: cover;
+    height: 600px;
+    width: 1000px;      
+   }
+}
+
+@media (min-width: 1700px) {
+   img.formPhoto {
+    border-radius: 20px;
+    display: block;
+    object-fit: cover;
+    height: 875px;
+    width: 1000px;      
+   }
+}
+
+@media (min-width: 2000px) {
+   img.formPhoto {
+    border-radius: 20px;
+    display: block;
+    object-fit: cover;
+    height: 1480px;
+    width: 1400px;      
+   }
 }
