@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <!--
+   Contact - Studio Khoritz
+   Author: Benjamin Treadwell
+   Date:  6/9/25
+
+    Filename: sk_contact.html
+   -->
+   <title>Studio Khoritz - Contact Page</title>
+   <meta charset="utf-8" />
+   <link href="css/sk_base.css" rel="stylesheet"  />
+   <link href="css/sk_style.css" rel="stylesheet"  />
+   <script src="https://use.fontawesome.com/3f1495bd79.js"></script>
+   <script src="js/sk_submit.js"></script>
+</head>
+
+<body>
+
+   <header>
+      <div class="banner">
+         <h1>Welcome to <strong>Studio Khoritz</strong></h1>
+         <img src="img/sk_banner.png" alt="Studio Khoritz" />
+      </div>          
+         <nav>
+            <button class="trigram"><i class="fa fa-bars"></i></button>
+            <ul class="navList">
+                  <li class="firstList"><a href="index.html">Home</a></li>
+                  <li><a class="active" href="sk_contact.html">Contact</a></li>
+                  <li class="lastList"><a href="sk_services.html">Services</a></li>
+            </ul>
+         </nav>
+  
+   </header>
+
+   <section>
+      <div class="form">
+         <h2 class="form">Contact Form</h2>
+      </div>
+         <div class="formRow">
+           
+         <form id="register" action="http://www.example.com/cg/register" method="post">
+               <fieldset>
+                  <legend><i>Required Item (*)</i></legend>
+                  <div class="dataDiv">
+                     <label for="typeBox">Inquiry Type*</label>
+                     <input name="type" id="typeBox" type="text" list="typeList" required/>
+                        <datalist id="typeList">        
+                           <option value="Graphic Design">
+                           <option value="Photography">
+                           <option value="Cinematography">
+                           <option value="Project Management">
+                           <option value="General Inquiry/Other">  
+                        </datalist>      
+
+                        <label for="nameBox">Name or Company*</label>
+                        <input name="firstName" id="nameBox" type="text" required>
+
+                        <label for="projBox">Project Description*</label>
+                        <textarea name="address" id="projBox" required ></textarea>
+
+                        <label for="mailBox">E-mail*</label>
+                        <input name="email" id="mailBox" type="email" required>
+
+                        <label for="phoneBox">Phone Number*</label>
+                        <input name="phoneNumber" id="phoneBox" type="tel" required placeholder="(###) ###-####"       pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$">
+
+                        <label for="bugList">Project Budget</label>
+                        <select name="budgetType" id="bugList">
+                           <option value="quote">Price Quote</option>                  
+                           <option value="member">$1000+</option>
+                           <option value="nonmember">$500+</option>
+                           <option value="student">$250+</option>
+                           <option value="poster">$100+</option>
+                           <option value="guest">$0+</option>                 
+                        </select>
+                     <p>
+                        <input type="submit" value="Continue" />          
+                     </p>
+                  </div>
+               </fieldset>
+                  <img class="formPhoto" src="img/sk_contact2.png" alt="Placeholder 2">
+            </form>
+               <div class="embedDiv">
+               <img class="contact" src="img/sk_contact.png" alt="Placeholder">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5899.548632210815!2d-122.87267678715236!3d42.32601213713002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54cf7a3b4cf3b939%3A0x617fcdae51b26882!2sRogue%20Community%20College%20-%20Riverside%20Campus!5e0!3m2!1sen!2sus!4v1749693767511!5m2!1sen!2sus" style="border:0; border-bottom-left-radius: 20px; border-bottom-right-radius: 20px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+               </div>  
+         </div> 
+         
+   </section>
+   <footer>
+      <div>
+         <h2 class="footer">
+            <a href="sk_contact.html">
+               <strong>Contact Me Today With Your Project, Design, or Gig Information.</strong>
+            </a>
+         </h2>
+      </div>
+      <div class="footerFinal">
+            <address class="addFoot">
+               Studio Khoritz &#8226; 777 Franklin Park, Medford OR 99999 &#8226; 777-777-7777
+            </address>
+         <a class="iconB" href="https://x.com/"  target="_blank">
+            <img src="img/twittericon.png" alt="Twitter Icon" />
+         </a>
+         <a class="iconA" href="https://www.facebook.com/" target="_blank">
+            <img src="img/fbicon.png" alt="Facebook Icon" />
+         </a>  
+      </div>
+      <div class="credits">
+         <a href="https://pixabay.com/" target="_blank">
+            <i>All Creative Commons provided by Pixabay</i>
+         </a>
+      </div>
+      <i class="credits">
+         Web Design by Benjamin Treadwell
+      </i>      
+   </footer>
+
+</body>
+</html>

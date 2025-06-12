@@ -1,0 +1,588 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'Artbrush';
+    src: 
+        url('../font/artbrush.ttf') format("truetype");
+}
+
+@font-face {
+    font-family: 'Butler';
+    src: 
+        url('../font/Butler_Medium.otf') format("opentype");
+}
+
+/*
+    Typographic Style Sheet
+    Author: Benjamin Treadwell
+    Date:   6/10/25
+   
+    Filename: ph_style.css
+
+*/
+
+
+/* Main Style */
+
+html {
+    background-color: rgba(200, 162, 200, 1.00);
+    background: rgb(200, 162, 200);
+    font-family: 
+        Verdana, 
+        Geneva, 
+        serif;
+    height: 100%;
+}
+
+body {
+   background-color: rgb(200, 162, 200);
+   box-shadow: rgb(51, 51, 51) 10px 0px 40px, rgb(51, 51, 51) -10px 0px 40px;
+   border-left: 1px solid grey;
+   border-right: 1px solid grey;
+   min-height: 100%;   
+   margin: 0px auto; 
+   width: 100%;
+}
+
+body {
+    background-color: rgba(200, 162, 200, 1.00);
+    font-family: 
+    'Butler', 
+    Verdana,  
+    Geneva, 
+    serif;
+}
+
+nav {
+    background-color: rgba(200, 162, 200, 1.00);
+    background: linear-gradient(to top, black 42%, grey);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+li.firstList {
+   border-bottom-left-radius: 20px;
+}
+li.lastList {
+   border-bottom-right-radius: 20px;
+}
+
+
+p {
+    margin: 0px;
+    padding: 5px 25px 10px;
+}
+
+body > p {
+    font-size: 1.1em;
+    text-align: center;
+}
+
+address {
+    font-size: 100%;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 0px;
+}
+
+.trigram {
+    display: none;
+}
+
+/* Navigation Styles */
+
+nav a {
+    font-family: 
+    'Trebuchet MS', 
+    Helvetica, 
+    sans-serif;
+    padding: 10px 0px;
+}
+
+nav a:link {
+    color: white;
+    text-decoration: none;
+    background-color: hsla(0, 0%, 42%, 0.4);
+}
+
+nav a:visited {
+    color: white;
+    text-decoration: none;
+    background-color: hsla(0, 0%, 42%, 0.4);
+}
+
+nav a.active {
+    color: hsla(0, 0%, 100%, 0.7);
+    background-color: hsla(0, 0%, 42%, 0.7);
+}
+
+nav a:hover {
+    color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(200, 200, 200, 0.7);
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+nav ul {
+   justify-content: space-between;
+   width: 100%;
+   display: flex;
+}
+
+nav ul li {
+    text-align: center;
+    width: 100%;
+    display: flex;
+}
+
+nav ul li a {
+    display: block;
+}
+
+/* Body Styles*/
+
+body {
+    min-width: 300px;
+    width: 95%;
+}
+
+body > header > img {
+    display: block;
+    width: 100%;
+}
+
+.column {
+   display: flex;
+}
+
+
+/* Left Column Styles */
+
+section#leftColumn {
+   padding-left: 1.5em; 
+   width: 67%;
+ }
+
+
+/* Right Column Styles */
+
+section#rightColumn {
+    width: 33%;
+}
+
+section#rightColumn img {
+    display: block;
+    width: 100%;
+}
+
+/* Footer Styles */
+
+footer {
+    background-color: rgb(200, 162, 200);
+}
+
+footer::after {
+    clear:both;
+    display: table;
+}
+
+
+img.introPhoto {
+    height: auto;
+    width:auto;
+    min-width: auto;
+    min-height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mainDiv {
+    width: 100%;
+    overflow: hidden;
+    align-items: center;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    display: flex;
+}
+
+p.intro {
+    align-items: center;
+    width: 100%;
+    display: flex;
+    margin-bottom: 30px;
+}
+
+h2.footer {
+    font-size: 135%;
+    padding-top: 5px;
+}
+
+/* Table Styles */
+
+table {
+    background: 
+    linear-gradient(to bottom, hsla(0, 0%, 42%, 0.2), hsla(0, 0%, 42%, 0.9)); 
+    border: 5px solid gray;
+}
+
+table th, td {
+    border: 3px solid gray; 
+    line-height: 1.5em;
+    text-align: center;
+    padding: 8px;
+}
+
+th {
+    background: hsla(0, 0%, 42%, 0.7);
+    color: rgb(200, 162, 200);
+    font-weight: normal;
+}
+
+td {
+    color: white; 
+    font-size: 0.9em; 
+    vertical-align: top;
+}
+
+/* Column Styles */
+
+col#firstCol {width: 24%;}
+
+col.dataCols {width: 19%;}
+
+/* Table Header Styles */
+
+table {
+    border-radius: 20px;
+}
+
+thead tr {
+    height: 60px;
+}
+
+table > thead > tr:first-of-type > th:first-of-type {
+    font-size: 2em;
+}
+
+table > thead > tr:first-of-type > th:not(:first-of-type)  {
+    background: transparent; color: black;
+}
+
+div.banner {
+    background: linear-gradient(to top, rgb(200, 162, 200), black);
+}
+
+div.banner img {
+    display: block;
+    object-fit: cover;
+    height: 400px;
+    z-index: -1;
+}
+
+div.banner h1 {
+    position: absolute;
+    top: 10px;
+    left: 8%;
+}
+
+
+/* Form Layout Styles */
+
+label {
+    color: white;
+    display: block;
+    float: left;
+    clear: left;
+    margin: 5px;
+    width: 200px;
+}
+
+input, select, textarea {
+   display: block;
+   float: left;
+   margin: 5px 0px;
+   width: 200px;
+   background-color: white;
+}
+
+textarea {
+   height: 100px;
+}
+
+form p {
+   clear: left;
+   text-align: center;
+   padding-top: 40px;
+}
+
+
+
+form fieldset {
+    background-color: hsla(0, 0%, 42%, 0.7);
+    border-radius: 20px;
+    flex: 1 1 300px;
+    font-size: 0.85em;
+    padding: 10px;
+    margin: 10px;
+}
+
+div.formRow {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 7px 0px;
+}
+
+div.formRow > * {
+    flex: 1 1 150px;
+}
+
+div.form {
+    background-color: hsla(0, 0%, 42%, 0.7); 
+    color: white; 
+    padding: 5px;
+    border-radius: 20px;}
+
+
+/* Text Area Styles */
+
+textarea {
+    margin-top: 10px; 
+    height: 100px; 
+    width: 95%;
+}
+
+/* Form Button Styles */
+
+input[type="submit"] {
+    background-color: hsla(0, 0%, 42%, 0.7);
+    color: white;
+    border-radius: 20px;
+    float: none;
+    display: inline;
+    height: 30px;
+    width: 150px;    
+    font-size: 1.2em;
+    padding: 5px;
+    margin: 15px;
+}
+
+
+/* Default styles for web tables */
+
+table {
+   border-spacing: 0;
+}
+
+td {
+   vertical-align: top;
+}
+
+h1 {
+   font-size: 2.5em;
+   text-align: center;
+}
+
+h2 {
+   font-size: 1.5em;
+}
+
+th.sum {
+    font-size: 1.5em;
+}
+
+tr, tfoot {
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+div.mainDiv {
+    background-color: hsla(0, 0%, 42%, 0.7);
+    border-radius: 20px;
+    margin: 5px;
+    padding-bottom: 10px;
+}
+
+section#rightColumn , section#leftColumn {
+    background-color: hsla(0, 0%, 42%, 0.7);
+    border-radius: 20px;
+    margin: 5px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+h2 {
+    text-align: center;
+}
+
+div.embedDiv {
+    background-color: hsla(0, 0%, 42%, 0.7);
+    border-radius: 20px;
+}
+
+div.introHead {
+    font-size: 1.5em;
+    font-style: italic;
+    display: inline;
+    text-align: center;
+    line-height: 2em;
+}
+
+div iframe {
+    display: block;
+    overflow: auto;
+}
+
+/* Footer styles */   
+
+footer {
+    color: white;    
+    background-color: rgba(200, 162, 200, 1.00);
+    background: linear-gradient(to top, black 20%, grey);
+    border-radius: 20px;
+    font-size: 0.9em;  
+    font-style: normal;
+}
+
+
+footer::after {
+   display: table;
+   content: "";
+   clear: both;
+}
+
+/* Header styles */
+
+div.introHead {
+    width: 100%;
+}
+
+strong {
+    color: rgb(200, 162, 200);
+    font-size: 120%;
+}
+
+div.credits a, i.credits {
+    text-decoration: none;
+    color: hsla(0, 0%, 80%, .7);
+}
+
+address.addFoot {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+body {
+    min-height: 100%;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.iconB {
+    display: flex;
+    float: left;
+    padding-left: 30px;
+}
+
+.iconA {
+    display: flex;
+    float: right;
+    padding-right: 30px;    
+}
+
+.footerFinal {
+    text-align: center;
+}
+
+img.formPhoto {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+fieldset {
+    z-index: 1;
+}
+
+strong {
+    font-family: 
+    'Artbrush';
+
+}
+
+h1, h2, legend, table, thead, tfoot, th, td, tr, 
+address, i, a, li, label, textarea, input, datalist, dl {
+    font-family: 
+    'Butler';
+}
+
+h2.form {
+    font-size: 1.7em;
+}
+
+h2 a.contact {
+    padding-top: 5px;
+}
+
+h2 a {
+    text-decoration: none;
+}
+
+div.dataDiv {
+    position: relative;
+    z-index: 1;
+}
+
+img.contact {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+@media (max-width: 1300px) {
+   img.formPhoto {
+      display: none;
+   }
+}
+
+@media (max-width: 482px) {
+    img.formPhoto {
+        display: none;
+}
+}
+
+iframe {
+    width: 100%;
+    height: auto;
+}
+
+/* Validation Styles */
+
+input:focus, select:focus, textarea:focus {
+    background-color: rgb(200, 162, 200);
+}
+
+input#typeBox:focus:valid,
+input#nameBox:focus:valid,
+input#projBox:focus:valid,
+input#mailBox:focus:valid,
+input#phoneBox:focus:valid {
+    background: rgb(220, 255, 220) url('../img/sk_valid.png') bottom right/contain no-repeat;
+}
+
+input#typeBox:focus:invalid,
+input#nameBox:focus:invalid,
+input#projBox:focus:invalid,
+input#mailBox:focus:invalid,
+input#phoneBox:focus:invalid {
+    background: rgb(255, 232, 233) url('../img/sk_invalid.png') bottom right/contain no-repeat;
+}
+
+div.aside img {
+    border-radius: 20px;
+}
